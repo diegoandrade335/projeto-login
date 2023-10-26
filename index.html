@@ -5,20 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <main> 
         <section id="login">
             <div id="imagem">
-                foto
+               
             </div>
 
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Bem-vINDO, FAÇA login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+                <p>Bem-vindo, faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
 
-                <form action="login.php" method="post">
-                    
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        
+                        <span class="material-icons">email</span>
+                        <input type="email" name="login" id="ilogin" placeholder="E-mail" autocomplete="on" required maxlength="30">
+                        <label for="ilogin">Login</label>
+
+
+                    </div>
+                    <div class="campo">
+
+                        <span class="material-icons">key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Password" autocomplete="current-password" required minlength="8">
+                        <label for="isenha">Senha</label>
+                       
+
+
+                    </div>
+
+                    <input type="submit" value="Entrar">
+                    <a class="botao" href="esqueci.html"> Esqueci a senha <i class="material-icons">mail</a>
+
                 </form>
 
             </div>
